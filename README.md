@@ -1,27 +1,61 @@
-# 统计学习方法课后作业 (SCUT)
+# 统计学习方法课后作业（SCUT）
 
-2026年春季学期，华南理工大学（SCUT）数学专业大二下学期《统计学习方法》课程相关练习。
+2026 年春季学期，华南理工大学（SCUT）数学专业大二下学期《统计学习方法》课程相关练习与代码实现仓库。
 
-这是我的机器学习与统计学习方法代码仓库，目前主要包含了基于《统计学习导论》(ISLP) 的课后习题 Python 实现。
+本仓库主要用于整理我在学习 **机器学习** 与 **统计学习方法** 过程中完成的 Python 代码，包括基于《统计学习导论》（ISLP）相关内容的练习，也包含一个 PDF 图片提取小工具。
 
-## 包含的内容
+---
 
-* `boston_exercise.py`: 波士顿房价数据集的回归分析练习。
-* `carseats_regression.py`: Carseats 数据集的多元线性回归与分类变量处理。
-* `compare_linear_and_cubic_regression_rss.py`: 线性回归与三次回归的 RSS 对比分析。
-* `stats_learning_concepts.py`: 统计学习基础概念（分类与回归、预测与推断）的场景判断脚本。
+## 项目内容
 
-## 运行环境与依赖库
+目前仓库中包含以下脚本：
 
-在运行本项目代码前，请确保安装了以下 Python 库：
+- `boston_exercise.py`  
+  波士顿房价数据集的回归分析练习。
 
-* `pandas`
-* `numpy`
-* `statsmodels`
-* `ISLP` (包含练习所需的数据集)
+- `carseats_regression.py`  
+  Carseats 数据集的多元线性回归与分类变量处理。
 
-可以通过以下命令快速安装：
+- `compare_linear_and_cubic_regression_rss.py`  
+  线性回归与三次回归的 RSS 对比分析。
+
+- `stats_learning_concepts.py`  
+  统计学习基础概念相关的小脚本，用于理解分类、回归、预测与推断等内容。
+
+- `PDF catch.py`  
+  从 PDF 文件中提取高分辨率图片的小工具。
+
+---
+
+## 运行环境
+
+建议使用以下环境：
+
+- Python 3.9 及以上
+- Windows / Linux / macOS 均可
+
+---
+
+## 依赖库
+
+在运行本项目代码前，请先安装以下 Python 库：
+
+### 课程练习部分依赖
+- `pandas`
+- `numpy`
+- `statsmodels`
+- `ISLP`
+
+### PDF 图片提取工具依赖
+- `pymupdf`
+
+---
+
+## 安装方式
+
+可以使用以下命令安装依赖：
 
 ```bash
 pip install pandas numpy statsmodels
-pip install ISLP -i [https://pypi.tuna.tsinghua.edu.cn/simple](https://pypi.tuna.tsinghua.edu.cn/simple)
+pip install ISLP -i https://pypi.tuna.tsinghua.edu.cn/simple
+pip install pymupdf
